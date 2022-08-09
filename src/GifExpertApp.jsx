@@ -11,8 +11,8 @@ export const GifExpertApp = () => {
 
   return (
     <>
-      <div className="app">
-        <h1>GifExpertApp</h1>
+      <h1 className="nav">GifExpertApp</h1>
+      <div className="container">
         <AddCategory onNewCategory={ onAddCategory } />
         {
           categories.map((category) => (
@@ -22,8 +22,10 @@ export const GifExpertApp = () => {
           ))
         }
       </div>
-      
-      <div className="footer">Desarrollado por @dev.danieladayro</div>
+
+      <div className="footer">
+        Desarrollado por <a href="https://github.com/devdaniela/react-gif-expert" target="_blanlk">@devdaniela </a>
+      </div>
     </>
   );
 };
